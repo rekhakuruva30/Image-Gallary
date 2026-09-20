@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📸 My Image Gallery</h1>
+        <p>Explore Nature, Animals and Beautiful Places</p>
+    </header>
+
+
+    <!-- Category Buttons -->
+
+    <div class="filters">
+
+        <button onclick="filterImages('all')">
+            All
+        </button>
+
+        <button onclick="filterImages('nature')">
+            🌳 Nature
+        </button>
+
+        <button onclick="filterImages('animals')">
+            🦁 Animals
+        </button>
+
+        <button onclick="filterImages('places')">
+            🏔️ Places
+        </button>
+
+    </div>
+
+
+    <!-- Gallery -->
+
+    <div class="gallery" id="gallery"></div>
+
+
+    <!-- Lightbox -->
+
+    <div id="lightbox" class="lightbox">
+
+        <span class="close" onclick="closeLightbox()">
+            &times;
+        </span>
+
+        <button class="prev" onclick="previousImage()">
+            ❮
+        </button>
+
+        <img id="lightboxImage" src="" alt="Gallery Image">
+
+        <button class="next" onclick="nextImage()">
+            ❯
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 My Image Gallery | CodeAlpha Task 1</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
